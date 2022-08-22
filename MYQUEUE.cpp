@@ -65,6 +65,12 @@ public:
 
     // peek --> front() back()
 
+    int front()
+    {
+        int chk = front->val;
+        return chk;
+    }
+
     // empty --> empty()
 };
 
