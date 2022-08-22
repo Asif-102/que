@@ -71,7 +71,21 @@ public:
         return chk;
     }
 
+    int back()
+    {
+        int chk = rear->val;
+        return chk;
+    }
+
     // empty --> empty()
+
+    bool empty()
+    {
+        if(front == NULL && rear == NULL)
+            return false;
+        else
+            return true;
+    }
 };
 
 int main(void)
