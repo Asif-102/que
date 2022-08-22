@@ -65,13 +65,13 @@ public:
 
     // peek --> front() back()
 
-    int front()
+    int Front()
     {
         int chk = front->val;
         return chk;
     }
 
-    int back()
+    int Back()
     {
         int chk = rear->val;
         return chk;
