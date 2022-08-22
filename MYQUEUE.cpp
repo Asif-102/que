@@ -26,13 +26,13 @@ public:
         rear = NULL;
     }
 
-    //enqueue --> push (val)
+    // enqueue --> push (val)
 
     void push(int val)
     {
         Node *nw = new Node(val);
 
-        if(front == NULL)
+        if (front == NULL)
         {
             front = nw;
             rear = nw;
@@ -43,11 +43,29 @@ public:
         rear = rear->next;
     }
 
-    //deque --> pop ()
+    // deque --> pop ()
 
-    //peek --> front() back()
+    int pop()
+    {
+        int chk = -1;
+        if (rear == NULL)
+        {
+            cout << "Queue Underflow | There is no element in the Queue" << endl;
+            return chk;
+        }
+        Node *delNode = front;
+        front = front->next;
+        if(front == NULL)
+            rear = NULL;
+        
+        chk = delNode->val;
+        delete delNode;
+        return chk;
+    }
 
-    //empty --> empty()
+    // peek --> front() back()
+
+    // empty --> empty()
 };
 
 int main(void)
