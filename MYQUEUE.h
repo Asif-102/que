@@ -82,8 +82,8 @@ public:
     bool empty()
     {
         if(front == NULL && rear == NULL)
-            return false;
-        else
             return true;
+        else
+            return false;
     }
 };
