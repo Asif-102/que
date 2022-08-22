@@ -53,7 +53,7 @@ public:
             cout << "Queue Underflow | There is no element in the Queue" << endl;
             return chk;
         }
-        Node *delNode = front;
+        Node<Q> *delNode = front;
         front = front->next;
         if(front == NULL)
             rear = NULL;
