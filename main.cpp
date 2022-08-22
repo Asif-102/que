@@ -5,7 +5,7 @@ using namespace std;
 
 int main(void)
 {
-    Queue q;
+    Queue<int> q;
 
     int n;
     cin >> n;
