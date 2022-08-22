@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-template<typename N> class Node
+template <typename N>
+class Node
 {
 public:
     N val;
@@ -14,7 +15,8 @@ public:
     }
 };
 
-template<typename Q> class Queue
+template <typename Q>
+class Queue
 {
     Node<Q> *front;
     Node<Q> *rear;
@@ -55,9 +57,9 @@ public:
         }
         Node<Q> *delNode = front;
         front = front->next;
-        if(front == NULL)
+        if (front == NULL)
             rear = NULL;
-        
+
         chk = delNode->val;
         delete delNode;
         return chk;
@@ -81,7 +83,7 @@ public:
 
     bool empty()
     {
-        if(front == NULL && rear == NULL)
+        if (front == NULL && rear == NULL)
             return true;
         else
             return false;
